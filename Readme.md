@@ -38,7 +38,7 @@ Run development:
 
 Add environment variable to production:
 ```
-$ now secrets add my-mongodb-uri mongodb+srv://<user>:<password>@<ipaddress>/<database-name>?retryWrites=true
+$ now secrets add earthquakes-mongodb-uri mongodb+srv://<user>:<password>@<ipaddress>/<database-name>?retryWrites=true
 ```
 
 Add the github integration to Zeit.co for auto deployment or Run now:

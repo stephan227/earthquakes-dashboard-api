@@ -1,5 +1,5 @@
 {
   "routes": [
-    { "src": "/.*", "status": 308, "headers": { "Location": "https://.netlify.com/" } }
+    { "src": "/.*", "status": 308, "headers": { "Location": "https://practical-visvesvaraya-81570b.netlify.app/" } }
   ]
 }

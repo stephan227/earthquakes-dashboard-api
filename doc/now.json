@@ -1,0 +1,5 @@
+{
+  "routes": [
+    { "src": "/.*", "status": 308, "headers": { "Location": "https://.netlify.com/" } }
+  ]
+}

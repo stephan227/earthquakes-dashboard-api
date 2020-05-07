@@ -1,0 +1,30 @@
+{
+  "name": "earthquakes-dashboard-api",
+  "version": "1.0.0",
+  "description": "Earthquakes Dashboard Restful API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephan227/earthquakes-dashboard-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephan227/earthquakes-dashboard-api/issues"
+  },
+  "homepage": "https://github.com/stephan227/earthquakes-dashboard-api#readme",
+  "dependencies": {
+    "mongodb": "^3.5.2"
+  },
+  "devDependencies": {
+    "apidoc": "^0.20.0",
+    "jsdoc": "^3.6.3"
+  },
+  "apidoc": {
+    "title": "Earthquakes Dashboard API",
+    "url": "/api"
+  }
+}

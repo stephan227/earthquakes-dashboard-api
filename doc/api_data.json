@@ -76,5 +76,43 @@
     "version": "0.0.0",
     "filename": "api/earthquakes.js",
     "groupTitle": "Earthquakes"
+  },
+  {
+    "type": "get",
+    "url": "/earthquakes_count",
+    "title": "",
+    "name": "GetEarhquakesCount",
+    "group": "Earthquakes",
+    "description": "<p>Returns the earhtquake counts by date.</p>",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "integer",
+            "optional": false,
+            "field": "count",
+            "description": "<p>Amount of earthquakes for a given date</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "date",
+            "optional": false,
+            "field": "time",
+            "description": "<p>Date</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/1.1 200 OK\n [\n   {\n     \"count\":9,\n     \"date\":\"2018-11-26\"\n   }\n ]",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "api/earthquakes_count.js",
+    "groupTitle": "Earthquakes"
   }
 ]

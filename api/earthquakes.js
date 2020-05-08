@@ -71,5 +71,12 @@ module.exports = async (req, res) => {
     .find({ ...location_query, ...find_query }, { projection: { _id: 0 } })
     .sort({ time: -1 })
     .toArray();
-  res.status(200).json(earthquakes);
+
+  res.status(200).json(
+    earthquakes.map((doc) => {
+      doc.coordinates = doc["location"].coordinates;
+      delete doc["location"];
+      return doc;
+    })
+  );
 };

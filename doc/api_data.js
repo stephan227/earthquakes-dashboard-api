@@ -1,7 +1,7 @@
 define({ "api": [
   {
     "type": "get",
-    "url": "/earthquakes",
+    "url": "/earthquakes?from=2020-05-05",
     "title": "",
     "name": "GetEarhquakes",
     "group": "Earthquakes",
@@ -65,10 +65,10 @@ define({ "api": [
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "time",
+            "type": "date",
             "optional": false,
             "field": "from",
-            "description": "<p>From time</p>"
+            "description": "<p>Start date</p>"
           }
         ]
       }

@@ -1,19 +1,19 @@
 # Earthquakes dashboard API
 The following repo contains the API for the usgs earthquakes dashboard.
 
-Documentation can be found in the following link: 
-https://earthquakes-dashboard-api.now.sh/doc
+Documentation:
+https://practical-visvesvaraya-81570b.netlify.app
 
 ## Requirements
 ```
-Node v10.15.0
-Now 16.7.3
+  Node v10.15.0
+  Now 16.7.3
 ```
 
 ## Development
 Create .env file with en mongod uri:
 ```
-MONGODB_URI=mongodb+srv://<user>:<password>@<ipaddress>/<database-name>?retryWrites=true
+  MONGODB_URI=mongodb+srv://<user>:<password>@<ipaddress>/<database-name>?retryWrites=true
 ```
 
 Install dependencies
@@ -38,24 +38,24 @@ Run development:
 
 Add environment variable to production:
 ```
-$ now secrets add earthquakes-mongodb-uri mongodb+srv://<user>:<password>@<ipaddress>/<database-name>?retryWrites=true
+  $ now secrets add earthquakes-mongodb-uri mongodb+srv://<user>:<password>@<ipaddress>/<database-name>?retryWrites=true
 ```
 
 Add the github integration to Zeit.co for auto deployment or Run now:
 ```
-$ now --prod
+  $ now --prod
 ```
 
 ## Code Formatting
 
 Code formatting relies on Prettier.js
 ```
-npm install --global prettier
+  $ npm install --global prettier
 ```
 
 Run prettier:
 ```
-  prettier --write "api/**/*.js"
+  $ prettier --write "api/**/*.js"
 ```
 
 

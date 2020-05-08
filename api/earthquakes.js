@@ -1,7 +1,7 @@
 const connectToDatabase = require("../mongodb/connection");
 
 /**
- * @api {get} /earthquakes
+ * @api {get} /earthquakes?from=2020-05-05
  * @apiName GetEarhquakes
  * @apiGroup Earthquakes
  *
@@ -24,7 +24,7 @@ const connectToDatabase = require("../mongodb/connection");
  *        }
  *      ]
  *
- * @apiParam {time} from From time
+ * @apiParam {date} from Start date
  *
  */
 

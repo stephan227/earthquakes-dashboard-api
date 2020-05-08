@@ -9,7 +9,6 @@
               "Access-Control-Allow-Origin": "*"
             }
         },
-        { "src": "/doc", "status": 308, "headers": { "Location": "https://practical-visvesvaraya-81570b.netlify.app/" }},
         { "src": "/mongodb", "status": 404},
         { "src": "/*", "status": 404}
     ],

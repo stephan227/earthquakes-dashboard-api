@@ -2,7 +2,7 @@
 The following repo contains the API for the usgs earthquakes dashboard.
 
 Documentation can be found in the following link: 
-
+https://earthquakes-dashboard-api.now.sh/doc
 
 ## Requirements
 ```
@@ -48,7 +48,7 @@ $ now --prod
 
 ## Documentation
 
-Documentation is built using apidoc.
+Documentation is built using [apidoc](https://apidocjs.com/).
 To install apidoc, run:
 ```
   $ npm install -g apidoc

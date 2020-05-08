@@ -46,6 +46,19 @@ Add the github integration to Zeit.co for auto deployment or Run now:
 $ now --prod
 ```
 
+## Code Formatting
+
+Code formatting relies on Prettier.js
+```
+npm install --global prettier
+```
+
+Run prettier:
+```
+  prettier --write "api/**/*.js"
+```
+
+
 ## Documentation
 
 Documentation is built using [apidoc](https://apidocjs.com/).

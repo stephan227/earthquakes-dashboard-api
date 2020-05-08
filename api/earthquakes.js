@@ -68,14 +68,20 @@ module.exports = async (req, res) => {
   const req_query = req.query;
   let find_query = {};
 
-  // convert year parameter string to int if it exists 
+  // Find by From date or default to last 30 days
   if (req_query.from){
-    find_query["time"] = { $gte : new Date(req_query.from) }
+    find_query["time"] = { $gte : new Date(req_query.from) };
+  } else {
+    // Get last 30 days by default
+    find_query["time"] = { $gte : new Date(new Date().getTime() - 30*24*60*60*1000) };
   }
 
   const db = await connectToDatabase(process.env.MONGODB_URI)
   const collection = await db.collection('earthquakes')
 
-  const earthquakes = await collection.find({...location_query, ...find_query}, {projection:{_id:0}}).sort({time: -1}).limit(1000).toArray();
+  // Find by location, time
+  // Remove mongodb _id
+  // Sort by date 
+  const earthquakes = await collection.find({...location_query, ...find_query}, {projection:{_id:0}}).sort({time: -1}).toArray();
   res.status(200).json(earthquakes)
 }
